@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Detector</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <h1>Detector Form</h1>
+
+    <!-- Visible on purpose so you can test -->
+    <form name="velora-contact" method="POST" data-netlify="true" netlify-honeypot="website" action="/thank-you">
+      <input type="hidden" name="form-name" value="velora-contact" />
+      <label>Name <input type="text" name="name" required></label><br>
+      <label>Email <input type="email" name="email" required></label><br>
+      <label>Type <input type="text" name="type"></label><br>
+      <label>Clinic <input type="text" name="clinic"></label><br>
+      <label>Message <textarea name="message"></textarea></label><br>
+      <!-- honeypot -->
+      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

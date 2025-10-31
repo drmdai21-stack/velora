@@ -1,0 +1,31 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Velora Website - FINAL Version 2</title>
+    </head>
+
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
+
+      <!-- Static hidden form so Netlify can detect it at deploy time -->
+      <form name="velora-contact" method="POST" data-netlify="true" netlify-honeypot="website" style="display: none;">
+        <input type="hidden" name="form-name" value="velora-contact" />
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <select name="type">
+          <option value="clinic">Clinic</option>
+          <option value="investor">Investor</option>
+          <option value="partner">Partner</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="text" name="clinic" />
+        <textarea name="message"></textarea>
+        <input type="text" name="website" />
+      </form> 
+    </body>
+  </html>
+  
